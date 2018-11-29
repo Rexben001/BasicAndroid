@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 //        setResult(RESULT_OK, newIntent);
 //
 //        startActivity(new Intent(MainActivity.this, SecondActivity.class).putExtra("count", count));
-        startActivity(new Intent(MainActivity.this, ScoreKeeper.class));
+        startActivity(new Intent(MainActivity.this, MaterialMe.class));
         Log.d(LOG_TAG, "Completed");
     }
 }
