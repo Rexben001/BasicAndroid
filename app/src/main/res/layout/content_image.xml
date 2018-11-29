@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ImageActivity"
+    tools:showIn="@layout/activity_image">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Droid Desrts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/donut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="donut"
+        android:contentDescription="Donut are glazed and sprinkled with candy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/ice_cream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="iceCream"
+        android:contentDescription="ce cream that is sweet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donut"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="froyo"
+        android:contentDescription="Froyo of Androdi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ice_cream"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/donut_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_wide"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginTop="24dp"
+        android:onClick="donut"
+        android:text="Donut is actually a beautiful snack to snack on. Trust "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/donut"
+        app:layout_constraintTop_toTopOf="@+id/donut" />
+
+    <TextView
+        android:id="@+id/ice_cream_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="iceCream"
+        android:text="Donut is actually a beautiful snack to snack on. Trust @string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ice_cream"
+        app:layout_constraintTop_toTopOf="@+id/ice_cream" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Donut is actually a beautiful snack to snack on. Trust me"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="froyo"
+        app:layout_constraintStart_toEndOf="@+id/froyo"
+        app:layout_constraintTop_toTopOf="@+id/froyo" />
+</android.support.constraint.ConstraintLayout>
