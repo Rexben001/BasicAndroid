@@ -45,7 +45,10 @@
             android:name=".RecyclerActivity"
             android:label="@string/title_activity_recycler"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ScoreKeeper"></activity>
+        <activity android:name=".ScoreKeeper" />
+        <activity android:name=".BatteryCharging" />
+        <activity android:name=".MaterialMe" />
+        <activity android:name=".DetaiilActivity"></activity>
     </application>
 
 </manifest>

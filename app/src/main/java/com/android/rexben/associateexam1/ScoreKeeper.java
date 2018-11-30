@@ -77,15 +77,15 @@ public class ScoreKeeper extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         //Apply night mode to your App
         if (item.getItemId() == R.id.night) {
-//            int nightmode = AppCompatDelegate.getDefaultNightMode();
+            int nightmode = AppCompatDelegate.getDefaultNightMode();
 
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//            if (nightmode == AppCompatDelegate.MODE_NIGHT_YES) {
-//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//
-//            } else {
-//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//            }
+            if (nightmode == AppCompatDelegate.MODE_NIGHT_YES) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            }
             recreate();
         }
         return super.onOptionsItemSelected(item);
