@@ -1,6 +1,7 @@
 package com.android.rexben.associateexam1;
 
 import android.content.res.TypedArray;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -89,6 +90,11 @@ public class MaterialMe extends AppCompatActivity {
         mAdapter.notifyDataSetChanged();
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+//        outState.putCharSequenceArrayList("list", mSportsData);
+        super.onSaveInstanceState(outState);
+    }
 
     public void resetSports(View view) {
         initializeData();
