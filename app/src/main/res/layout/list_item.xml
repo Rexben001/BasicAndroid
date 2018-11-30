@@ -24,7 +24,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/sportsImage"
+            android:id="@+id/sportsImageDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true" />
@@ -34,27 +34,27 @@
             style="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/sportsImage"
+            android:layout_alignBottom="@id/sportsImageDetails"
             android:padding="8dp"
             android:text="@string/title_placeholder"
             android:theme="@style/ThemeOverlay.AppCompat.Dark" />
 
         <TextView
-            android:id="@+id/newsTitle"
+            android:id="@+id/newsTitleDetails"
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/sportsImage"
+            android:layout_below="@id/sportsImageDetails"
             android:padding="8dp"
             android:text="@string/news_placeholder"
             android:textColor="?android:textColorSecondary" />
 
         <TextView
-            android:id="@+id/subTitle"
+            android:id="@+id/subTitleDetails"
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/newsTitle"
+            android:layout_below="@id/newsTitleDetails"
             android:padding="8dp"
             android:text="@string/sports_info_placeholder" />
 

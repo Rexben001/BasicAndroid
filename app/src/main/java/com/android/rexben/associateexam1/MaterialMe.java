@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -88,4 +89,8 @@ public class MaterialMe extends AppCompatActivity {
         mAdapter.notifyDataSetChanged();
     }
 
+
+    public void resetSports(View view) {
+        initializeData();
+    }
 }

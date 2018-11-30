@@ -47,7 +47,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ScoreKeeper" />
         <activity android:name=".BatteryCharging" />
-        <activity android:name=".MaterialMe"></activity>
+        <activity android:name=".MaterialMe" />
+        <activity android:name=".DetaiilActivity"></activity>
     </application>
 
 </manifest>
